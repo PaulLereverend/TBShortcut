@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14550"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15702"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
+    </dependencies>
+    <scenes>
+        <!--Button View Controller-->
+        <scene sceneID="fnf-Ne-gRI">
+            <objects>
+                <viewController id="NCf-3h-kbq" customClass="ButtonViewController" customModule="NSTouchBar_Catalog" sceneMemberID="viewController">
+                    <touchBar key="touchBar" id="5px-Zo-ih4" userLabel="NSTouchBar">
+                        <touchBarItems>
+                            <touchBarItem id="l9R-La-R8y" userLabel="Button 1">
+                                <viewController key="viewController" id="Li2-ep-PJV">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pnk-J6-38G">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <buttonCell key="cell" type="push" title="Button 1" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xJR-fi-06T">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="GTk-lk-Bzu" userLabel="Push Button">
+                                <viewController key="viewController" id="JC7-dn-gVO">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vyb-Kb-9wv">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="30"/>
+                                        <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSBookmarksTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e6x-e1-qNg">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                            <touchBarItem id="sof-0r-Oeo" userLabel="Button 3">
+                                <viewController key="viewController" id="agN-On-ScP">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-dh-gmw">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="108" id="D5O-TP-D8Y"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="push" title="Button 3" bezelStyle="rounded" image="NSBookmarksTemplate" imagePosition="left" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="24V-vP-tYp">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="15"/>
+                                        </buttonCell>
+                                    </button>
+                                </viewController>
+                            </touchBarItem>
+                        </touchBarItems>
+                    </touchBar>
+                    <connections>
+                        <outlet property="button3WidthConstraint" destination="D5O-TP-D8Y" id="wYj-cF-Poc"/>
+                    </connections>
+                </viewController>
+                <customObject id="fdV-mm-LMg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSBookmarksTemplate" width="17" height="18"/>
+    </resources>
+</document>

@@ -13,6 +13,12 @@
 		0312C55F23B8F7CB00F50CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0312C55D23B8F7CB00F50CE0 /* Main.storyboard */; };
 		0312C56B23B8F7CB00F50CE0 /* TBShortcutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C56A23B8F7CB00F50CE0 /* TBShortcutTests.swift */; };
 		0312C57623B8F7CB00F50CE0 /* TBShortcutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C57523B8F7CB00F50CE0 /* TBShortcutUITests.swift */; };
+		0312C58523B8F81600F50CE0 /* TBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C58323B8F81600F50CE0 /* TBController.swift */; };
+		0312C58623B8F81600F50CE0 /* TBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0312C58423B8F81600F50CE0 /* TBController.xib */; };
+		0312C58F23B923F700F50CE0 /* ButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C58E23B923F700F50CE0 /* ButtonTestViewController.swift */; };
+		0312C59523B92D7400F50CE0 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C59423B92D7400F50CE0 /* TestViewController.swift */; };
+		0312C59723B92DC600F50CE0 /* PopoverTouchBarSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C59623B92DC600F50CE0 /* PopoverTouchBarSample.swift */; };
+		0312C59923B9370200F50CE0 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0312C59823B9370200F50CE0 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		0312C57123B8F7CB00F50CE0 /* TBShortcutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TBShortcutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0312C57523B8F7CB00F50CE0 /* TBShortcutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBShortcutUITests.swift; sourceTree = "<group>"; };
 		0312C57723B8F7CB00F50CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0312C58323B8F81600F50CE0 /* TBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBController.swift; sourceTree = "<group>"; };
+		0312C58423B8F81600F50CE0 /* TBController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBController.xib; sourceTree = "<group>"; };
+		0312C58E23B923F700F50CE0 /* ButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewController.swift; sourceTree = "<group>"; };
+		0312C59423B92D7400F50CE0 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		0312C59623B92DC600F50CE0 /* PopoverTouchBarSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTouchBarSample.swift; sourceTree = "<group>"; };
+		0312C59823B9370200F50CE0 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 		0312C54B23B8F7CA00F50CE0 = {
 			isa = PBXGroup;
 			children = (
+				0312C58D23B923D800F50CE0 /* Button */,
 				0312C55623B8F7CA00F50CE0 /* TBShortcut */,
 				0312C56923B8F7CB00F50CE0 /* TBShortcutTests */,
 				0312C57423B8F7CB00F50CE0 /* TBShortcutUITests */,
@@ -98,8 +111,13 @@
 			children = (
 				0312C55723B8F7CA00F50CE0 /* AppDelegate.swift */,
 				0312C55923B8F7CA00F50CE0 /* ViewController.swift */,
+				0312C59823B9370200F50CE0 /* WindowController.swift */,
+				0312C59423B92D7400F50CE0 /* TestViewController.swift */,
+				0312C59623B92DC600F50CE0 /* PopoverTouchBarSample.swift */,
 				0312C55B23B8F7CB00F50CE0 /* Assets.xcassets */,
 				0312C55D23B8F7CB00F50CE0 /* Main.storyboard */,
+				0312C58323B8F81600F50CE0 /* TBController.swift */,
+				0312C58423B8F81600F50CE0 /* TBController.xib */,
 				0312C56023B8F7CB00F50CE0 /* Info.plist */,
 				0312C56123B8F7CB00F50CE0 /* TBShortcut.entitlements */,
 			);
@@ -122,6 +140,14 @@
 				0312C57723B8F7CB00F50CE0 /* Info.plist */,
 			);
 			path = TBShortcutUITests;
+			sourceTree = "<group>";
+		};
+		0312C58D23B923D800F50CE0 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				0312C58E23B923F700F50CE0 /* ButtonTestViewController.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +256,7 @@
 			files = (
 				0312C55C23B8F7CB00F50CE0 /* Assets.xcassets in Resources */,
 				0312C55F23B8F7CB00F50CE0 /* Main.storyboard in Resources */,
+				0312C58623B8F81600F50CE0 /* TBController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0312C59523B92D7400F50CE0 /* TestViewController.swift in Sources */,
+				0312C58F23B923F700F50CE0 /* ButtonTestViewController.swift in Sources */,
+				0312C58523B8F81600F50CE0 /* TBController.swift in Sources */,
+				0312C59923B9370200F50CE0 /* WindowController.swift in Sources */,
 				0312C55A23B8F7CA00F50CE0 /* ViewController.swift in Sources */,
 				0312C55823B8F7CA00F50CE0 /* AppDelegate.swift in Sources */,
+				0312C59723B92DC600F50CE0 /* PopoverTouchBarSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
